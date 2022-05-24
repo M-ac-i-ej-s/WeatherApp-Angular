@@ -1,0 +1,23 @@
+<div class="container">
+  <div id="Wind">
+    <p><fa-icon [icon]="faWind"></fa-icon></p>
+    <p style="margin-top: 12px">{{ windSpeedValue }}</p>
+    <p>{{ direction(windDirValue) }}</p>
+  </div>
+  <div id="clouds">
+    <p><fa-icon [icon]="faCloud"></fa-icon></p>
+    <p style="margin-top: 15px; font-size: 30px">{{ cloudsPerValue }} %</p>
+  </div>
+  <div id="SunRiseSet">
+    <p>
+      <fa-icon [icon]="faSun"></fa-icon
+      ><fa-icon [icon]="faArrowUpLong"></fa-icon>
+    </p>
+    <p>
+      <fa-icon [icon]="faSun"></fa-icon
+      ><fa-icon [icon]="faArrowDownLong"></fa-icon>
+    </p>
+    <p style="margin-top: 20px">{{ convertHMS(sunRiseValue) }}</p>
+    <p style="margin-top: 20px">{{ convertHMS(sunSetValue) }}</p>
+  </div>
+</div>
